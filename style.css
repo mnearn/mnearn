@@ -1,0 +1,42 @@
+style.css
+body{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1;
+    margin: 20px;
+    text-align: left;
+    font-size: 10px;
+    
+}
+.text-box {
+    width: 200px;        
+    padding: 10px;       
+    border: 1px solid #ccc; 
+    margin-top: 10px;
+    inline-size: 1;    
+}
+     .blk{
+        color: black;
+    font-size: 10px;
+     }
+    .red-bld-text{
+        color:red;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    .blk-undr{
+        color: black;
+        text-decoration: underline;
+        font-size: 10px;
+    }
+      .blk-hlght {
+    background: orange;
+    padding: 1px 2px;
+    line-height: 1;
+    display: inline;
+    font-size: 10px;
+      }
+      img {
+    display: block;
+    margin-bottom: 15px;
+}
