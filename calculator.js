@@ -3,6 +3,7 @@ function sum(a,b){ return a + b; }
 function sub(a,b){ return a - b; }
 function divide(a,b){ return a / b; }
 function mult(a,b){ return a * b; }
+function mud(a,b){return a%b; }
 
 let nums = [];
 
@@ -18,7 +19,7 @@ while (true) {
     let val2 = prompt("Type number 2:");
     if (val2 === null) break;
 
-    let symbl = prompt("Type +, -, /, *");
+    let symbl = prompt("Type +, -, /, *, %");
     if (symbl === null) break;
 
     val1 = Number(val1);
@@ -40,7 +41,10 @@ while (true) {
     } else if (symbl == "*") {
         result = mult(val1, val2);
         nums.push(result);
-    } else {
+    }else if (symbl == "%"){
+        result = mud(val1,val2);
+    }
+    else {
         result = "Error: Invalid operator";
     }
 
@@ -66,3 +70,4 @@ document.write("<table border='1'>");
 document.write("<tr><th>Minimum</th><th>Maximum</th><th>Average</th><th>Total</th></tr>");
 document.write("<tr><td>" + min + "</td><td>" + max + "</td><td>" + avg + "</td><td>" + total + "</td></tr>");
 document.write("</table>");
+
